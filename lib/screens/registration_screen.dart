@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:email_password_login/Pages/Home_page.dart';
 import 'package:email_password_login/model/user_model.dart';
 import 'package:email_password_login/screens/home_screen.dart';
 import 'package:firebase_auth/firebase_auth.dart';
@@ -172,6 +173,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           padding: EdgeInsets.fromLTRB(20, 15, 20, 15),
           minWidth: MediaQuery.of(context).size.width,
           onPressed: () {
+            // Navigator.push(context, MaterialPageRoute(builder:(context) => HomeScreen()));
             signUp(emailEditingController.text, passwordEditingController.text);
           },
           child: Text(
@@ -296,7 +298,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
 
     Navigator.pushAndRemoveUntil(
         (context),
-        MaterialPageRoute(builder: (context) => HomeScreen()),
+        MaterialPageRoute(builder: (context) => Homepage()),
         (route) => false);
   }
 }

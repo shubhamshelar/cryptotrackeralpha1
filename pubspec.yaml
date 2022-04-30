@@ -22,18 +22,25 @@ environment:
 
 dependencies:
   cloud_firestore: ^2.5.1
-  cupertino_icons: ^1.0.2
   firebase_auth: ^3.1.0
   firebase_core: ^1.6.0
    
   flutter:
     sdk: flutter
   fluttertoast: ^8.0.8
+  cupertino_icons: ^1.0.4
+  http: ^0.13.4
+  provider: ^6.0.2
+  shared_preferences: ^2.0.13
+  syncfusion_flutter_charts: ^19.3.57
+  readmore: ^2.1.0
    
 
 dev_dependencies:
   flutter_test:
     sdk: flutter
+  cupertino_icons: ^1.0.2
+  flutter_svg: ^1.0.3
 
 # For information on the generic Dart part of this file, see the
 # following page: https://dart.dev/tools/pub/pubspec
@@ -47,7 +54,7 @@ flutter:
 
   # To add assets to your application, add an assets section, like this:
   assets:
-    - assets/logo.png
+    - assets/
   # An image asset can refer to one or more resolution-specific "variants", see
   # https://flutter.dev/assets-and-images/#resolution-aware.
   # For details regarding adding assets from package dependencies, see
